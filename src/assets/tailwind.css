@@ -26,6 +26,9 @@
         text-decoration: none;
         position: relative;
     }
+}
+
+@layer components {
     nav ul li a.active::after {
         content: "";
         @apply w-1 h-1 bg-white absolute inset-x-0 top-6 mx-auto rounded;
@@ -33,9 +36,6 @@
     nav ul li a.active {
         color: #ffff;
     }
-}
-
-@layer components {
     .stretched-link::after {
         content: "";
         @apply z-10 absolute inset-0 bg-transparent pointer-events-auto;
