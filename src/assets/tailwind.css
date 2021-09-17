@@ -29,11 +29,11 @@
 }
 
 @layer components {
-    nav ul li a.active::after {
+    .active::after {
         content: "";
         @apply w-1 h-1 bg-white absolute inset-x-0 top-6 mx-auto rounded;
     }
-    nav ul li a.active {
+    .active {
         color: #ffff;
     }
     .stretched-link::after {
